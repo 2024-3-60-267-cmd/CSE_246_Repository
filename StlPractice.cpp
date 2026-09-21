@@ -42,8 +42,21 @@ void setPractice(){
     cout<<endl;
 }
 
+
+void mapPractice(){
+    /// map<key,value>
+    map<string , int > courseList;
+    courseList["CSE103"] = 25;
+    courseList["CSE106"] = 40;
+    courseList["CSE246"] = 30;
+    cout<<courseList.size()<<endl;
+    string s = "CSE246";
+    if(courseList.count(s)==0) cout<<"Course "<<s<<" does not exist!"<<endl;
+    else cout<<"Course "<<s<<" Total students "<<courseList[s]<<endl;
+}
 int main(){
-    stackPractice();
-    queuePractice();
-    setPractice();
+    //stackPractice();
+    //queuePractice();
+    //setPractice();
+    mapPractice();
 }
