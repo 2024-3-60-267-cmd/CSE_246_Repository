@@ -17,7 +17,18 @@ void stackPractice()
     cout<<stk1.top()<<endl;
     cout<<stk1.size()<<endl;
 }
+void queuePractice(){
+    queue<string>Q1;
+    Q1.push("CSE103");
+    Q1.push("CSE106");
+    Q1.push("CSE207");
+    Q1.push("CSE246");
+    cout<<Q1.front()<<endl;
+    cout<<Q1.size()<<endl;
+    Q1.pop();
+    cout<<Q1.front()<<endl;
+}
 
 int main(){
-    stackPractice();
+    queuePractice();
 }
