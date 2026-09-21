@@ -28,7 +28,22 @@ void queuePractice(){
     Q1.pop();
     cout<<Q1.front()<<endl;
 }
+void setPractice(){
+    set<char> s1;
+    s1.insert('a');
+    s1.insert('b');
+    s1.insert('c');
+    cout<<s1.size()<<endl;
+
+    set<char>::iterator it1;
+    for(it1 = s1.begin();it1!=s1.end();it1++){
+        cout<< *it1<<" ";
+    }
+    cout<<endl;
+}
 
 int main(){
+    stackPractice();
     queuePractice();
+    setPractice();
 }
